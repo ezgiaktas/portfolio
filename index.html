@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/ccs?family-Poppins:100,200,300,400,500,600,700&dsiplay=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <div class="toggle-btn">
+        <input type="checkbox">
+        <span class="icon"></span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#developer">Developer</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+        <section id="home">
+            <h1>Hi, I'm Ezgi<br>I'm a Front End Developer</h1>
+        </section>
+        
+        <section id="aboutme">
+            <h1>I'm 27 years old.<br>I'M A MATHEMATICS DIPLOMAED.<br>
+                I love programming and learning new things.</h1>
+        </section>
+
+        <section id="developer">
+            <h1>I am studying software expertise <br>from NEOS Software Academy.</h1>
+        </section>
+        
+        <section id="contact">
+            
+                <div class="contact-info">
+                    <div class="card">
+                        <i class="card-icon far fa-envelope"></i>
+                        <p>email@domain.com</p>
+                    </div>
+                    <div class="card">
+                        <i class="card-icon fas fa-phone"></i>
+                        <p>+900000000000</p>
+                    </div>
+                    <div class="card">
+                        <i class="card-icon fas fa-map-marker-alt"></i>
+                        <p>Kocaeli,Türkiye</p>
+                    </div>
+                </div> 
+        </section>
+        <div class="trail">
+            <div class="pointer pointer1"></div>
+            <div class="pointer pointer2"></div>
+            <div class="pointer pointer3"></div>
+            <div class="pointer pointer4"></div>
+            <div class="pointer pointer5"></div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).mousemove(function(e){
+            $('.pointer').css({left:e.pageX, top:e.pageY})
+        })
+    </script>
+</body>
+</html>

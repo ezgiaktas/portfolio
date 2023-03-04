@@ -1,0 +1,232 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+body {
+    background-color: #fff;
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul,li {list-style-type: none;
+z-index: 1;}
+h1,h2,h3{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+a {text-decoration: none;}
+/* Reset Finish */
+/* CSS Start */
+input[type="checkbox"]{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10000;
+}
+span.icon {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 10001;
+    pointer-events: none;}
+span.icon::before{
+    display: block;
+    content: "menu";
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+    text-transform: uppercase;
+    font-family: 'Carter One', cursive;
+}
+input[type="checkbox"]:checked~span.icon::before{
+    content: "close";
+    font-family: 'Carter One', cursive;
+}
+ul {
+    background-color: #9e9e9e3d;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    transition: 300ms all;
+}
+ul li {
+    display: block;
+}
+ul li a {
+    display: block;
+    margin-bottom: 30px;
+    color: #fff;
+    transition: 300ms all;
+}
+ul li a:hover {
+    transform: translateX(10px);
+}
+input[type="checkbox"]:checked~ul {
+    left: 0;
+}
+section{
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    
+}
+section h1 {
+    position: relative;
+    top: 50%;
+    font-family: 'Carter One', cursive;
+}
+section#home {
+    background-image: url(./photos/photo1.jpg);
+}
+section#aboutme {
+    background-image: url(./photos/photo2.jpg);
+}
+section#developer {
+    background-image: url(./photos/photo3.jpg);
+}
+section#contact {
+    background-image: url(./photos/photo4.jpg);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+ul#asd {
+    background-color: #9e9e9e3d;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    
+}
+ul#asd li {
+    display: flex;
+}
+ul#asd li a {
+    display: block;
+    margin-bottom: 30px;
+    color: #fff;
+    
+}
+ul#asd li a:hover {
+    transform: none;
+}
+.contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+.card {
+    background: #57606f;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(20% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.card-icon {
+    font-size: 28px;
+    background: #2f3542;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear
+}
+.card:hover .card-icon {
+    background: none;
+    color:  #2f3542;
+    transform: scale(1.6)
+}
+.card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear
+}
+.card:hover p{
+    max-height: 40px;
+    opacity: 1
+}
+@media screen and (max-width:800px) {
+    .contact-info{
+        flex-direction: column
+    }
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0
+    }   
+}
+.pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    pointer-events: none;
+    box-sizing: border-box;
+    transition: 0.2s
+}
+.pointer1 {
+    transition: 0.05s
+}
+.pointer2 {
+    transition: 0.1s
+}
+.pointer3 {
+    transition: 0.15s
+}
+.pointer4 {
+    transition: 0.2s
+}
+.pointer5 {
+    transition: 0.25s
+}
+ @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+
